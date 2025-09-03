@@ -2,7 +2,7 @@ server:
   port: 7000 #Puerto del zuul service
 
 zuul:
-  ignoredservices: '*'
+  ignored-services: '*'
   routes:
     servicio-cursos:
       path: /cursos/**
@@ -11,4 +11,5 @@ zuul:
 eureka:
   client:
     serviceUrl:
+
       defaultZone: http://localhost:8761/eureka
